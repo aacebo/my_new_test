@@ -3,6 +3,7 @@ services:
   - type: web
     name: my_new_test
     env: node
+    plan: free
     healthCheckPath: /
     autoDeploy: true
     buildCommand: npm install
