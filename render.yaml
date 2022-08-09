@@ -1,0 +1,16 @@
+
+services:
+  - type: web
+    name: my_new_test
+    env: node
+    healthCheckPath: /
+    autoDeploy: true
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: BASE_URL
+        value: https://my-new-test.onrender.com
+      - key: CLIENT_ID
+        value: e623321362a1b8328257d38747014577
+      - key: CLIENT_SECRET
+        value: 79ee4937208dece1f7952942f8367ff2
